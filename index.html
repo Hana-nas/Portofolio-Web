@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Template</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Floating Navigation -->
+    <nav class="floating-nav">
+        <!-- Anda bisa ganti icon SVG sesuai selera -->
+        <a href="#hero" class="nav-item active" title="Home">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+        </a>
+        <a href="#projects" class="nav-item" title="Projects">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+            </svg>
+        </a>
+        <a href="#skills" class="nav-item" title="Skills">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+        </a>
+        <a href="#contact" class="nav-item" title="Contact">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <!-- 
+            [UBAH GAMBAR] 
+            Ganti link 'src' di bawah ini dengan link foto Anda sendiri.
+            Atau jika Anda memiliki file gambar di folder yang sama, gunakan namanya, misal: src="foto-saya.jpg"
+        -->
+        <img src="hana porto.png" alt="Hero Background" class="hero-image">
+
+        <div class="hero-content">
+            <!-- [UBAH TEKS] -->
+            <h1 class="hero-title">Creative Developer</h1>
+        </div>
+        <div class="hero-arrow">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container about-grid">
+            <div class="about-main">
+                <!-- [UBAH TEKS] -->
+                <h2 class="about-main-text">
+                    Informatics Engineering Students with a strong interest in System Analyst, AI,
+                    Computer Vision Technologies. Skilled in requirement analysis, UML, database design,
+                    and programming using C and C++.
+                </h2>
+            </div>
+            <div class="about-sub">
+                <!-- [UBAH TEKS] -->
+                <p class="about-sub-text">
+                    Experienced in academic technology projects design and image-based technology concepts,
+                    with basic frontend development knowledge. Possesses strong analytical thinking, problem-solving,
+                    communication, and teamwork skills, with a strong willingness to learn and adapt to emerging
+                    technologies
+                </p>
+                <a href="#about" class="more-btn">
+                    More about me
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="projects-header">
+                <h2 class="projects-title">Impressive Works</h2>
+                <p class="projects-subtitle">Here's a selection of projects that showcase my passion for design and
+                    development, reflecting creativity and innovation.</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <a href="#" class="project-card">
+                    <!-- [UBAH GAMBAR] -->
+                    <img src="Poster PPM.png" alt="Project 1" class="project-image">
+                    <div class="project-info">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                        <span>Campus Lost Tracker</span> <!-- [UBAH TEKS] -->
+                        <p>Online lost and found report on campus area for mobile</p>
+                    </div>
+                </a>
+
+                <!-- Project 2 -->
+                <a href="#" class="project-card">
+                    <!-- [UBAH GAMBAR] -->
+                    <img src="Seruni coffee website Sprintcamp project.JPG" alt="Project 2" class="project-image">
+                    <div class="project-info">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                        <span>Seru.ni Coffee Website</span> <!-- [UBAH TEKS] -->
+                        <p>Website for Seru.ni coffee shop with profile, products, and order menu page</p>
+                    </div>
+                </a>
+
+                <!-- Project 3 -->
+                <a href="#" class="project-card">
+                    <!-- [UBAH GAMBAR] -->
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1000&auto=format&fit=crop"
+                        alt="Project 3" class="project-image">
+                    <div class="project-info">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                        <span>ChatGPT clone</span> <!-- [UBAH TEKS] -->
+                    </div>
+                </a>
+
+                <!-- Project 4 -->
+                <a href="#" class="project-card">
+                    <!-- [UBAH GAMBAR] -->
+                    <img src="https://images.unsplash.com/photo-1664448007559-0dbfcc914f6b?q=80&w=1000&auto=format&fit=crop"
+                        alt="Project 4" class="project-image">
+                    <div class="project-info">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                        <span>Gemini Clone</span> <!-- [UBAH TEKS] -->
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="skills-title">Skills that fuel my passion</h2>
+
+            <div class="skills-grid">
+                <!-- Skill 1 -->
+                <div class="skill-card">
+                    <div class="skill-icons">
+                        <div class="skill-icon" style="color: #E34F26;">HTML</div>
+                        <div class="skill-icon" style="color: #F7DF1E;">JS</div>
+                        <div class="skill-icon" style="color: #3178C6;">TS</div>
+                        <div class="skill-icon" style="color: white;">Nx</div>
+                    </div>
+                    <div>
+                        <!-- [UBAH TEKS] -->
+                        <h3 class="skill-name">Front-End Development</h3>
+                        <p class="skill-desc">Building engaging and user-friendly web interfaces using modern frameworks
+                            and technologies with expertise.</p>
+                    </div>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="skill-card">
+                    <div class="skill-icons">
+                        <div class="skill-icon" style="color: #3776AB;">Py</div>
+                        <div class="skill-icon" style="color: #A8B9CC;">C</div>
+                        <div class="skill-icon" style="color: #00599C;">C++</div>
+                        <div class="skill-icon" style="color: #CC342D;">Rb</div>
+                    </div>
+                    <div>
+                        <!-- [UBAH TEKS] -->
+                        <h3 class="skill-name">Programming Languages</h3>
+                        <p class="skill-desc">Proficient in problem-solving and applying programming languages to
+                            implement efficient data structures and algorithms.</p>
+                    </div>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="skill-card">
+                    <div class="skill-icons">
+                        <div class="skill-icon" style="color: #264de4;">CSS</div>
+                        <div class="skill-icon" style="color: #38B2AC;">Tw</div>
+                        <div class="skill-icon" style="color: #7952B3;">Bs</div>
+                        <div class="skill-icon" style="color: #CC6699;">Sa</div>
+                    </div>
+                    <div>
+                        <!-- [UBAH TEKS] -->
+                        <h3 class="skill-name">Styling & Design</h3>
+                        <p class="skill-desc">Crafting visually appealing and responsive designs with advanced styling
+                            tools and frameworks.</p>
+                    </div>
+                </div>
+
+                <!-- Skill 4 -->
+                <div class="skill-card">
+                    <div class="skill-icons">
+                        <div class="skill-icon" style="color: #339933;">Nd</div>
+                        <div class="skill-icon" style="color: #ffffff;">Ex</div>
+                        <div class="skill-icon" style="color: #092E20;">Dj</div>
+                    </div>
+                    <div>
+                        <!-- [UBAH TEKS] -->
+                        <h3 class="skill-name">Back-End Development</h3>
+                        <p class="skill-desc">Developing robust server-side logic and APIs to power dynamic and scalable
+                            web applications.</p>
+                    </div>
+                </div>
+
+                <!-- Skill 5 -->
+                <div class="skill-card">
+                    <div class="skill-icons">
+                        <div class="skill-icon" style="color: #4479A1;">My</div>
+                        <div class="skill-icon" style="color: #336791;">Pg</div>
+                        <div class="skill-icon" style="color: #47A248;">Mg</div>
+                    </div>
+                    <div>
+                        <!-- [UBAH TEKS] -->
+                        <h3 class="skill-name">Database Management</h3>
+                        <p class="skill-desc">Designing and managing databases to ensure secure and efficient data
+                            storage and retrieval.</p>
+                    </div>
+                </div>
+
+                <!-- Skill 6 -->
+                <div class="skill-card">
+                    <div class="skill-icons">
+                        <div class="skill-icon" style="color: #0DB7ED;">Dc</div>
+                        <div class="skill-icon" style="color: #FF9900;">AWS</div>
+                        <div class="skill-icon" style="color: #ffffff;">Vc</div>
+                    </div>
+                    <div>
+                        <!-- [UBAH TEKS] -->
+                        <h3 class="skill-name">Cloud & Deployment</h3>
+                        <p class="skill-desc">Experienced in deploying and managing applications using modern cloud
+                            platforms and tools.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact" class="contact">
+        <div class="container contact-inner">
+            <span class="contact-label">That's all for now.</span>
+            <h2 class="contact-title">Got a project in mind?<br>Let's talk</h2>
+
+            <a href="mailto:email@example.com" class="contact-btn">Get in touch</a>
+
+            <div class="contact-footer">
+                <div class="contact-info">
+                    <div class="info-block">
+                        <span class="info-label">Email</span>
+                        <!-- [UBAH TEKS] -->
+                        <span class="info-value">email@example.com</span>
+                    </div>
+                    <div class="info-block">
+                        <span class="info-label">Phone</span>
+                        <!-- [UBAH TEKS] -->
+                        <span class="info-value">(+62) 812-3456-7890</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
