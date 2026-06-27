@@ -1,11 +1,11 @@
-import { createAdminClient } from '@/lib/supabase/server'
+import { createClient, createAdminDbClient } from '@/lib/supabase/server'
 import { NextResponse } from 'next/server'
 
 type Params = { params: Promise<{ id: string }> }
 
 export async function GET(_request: Request, { params }: Params) {
   const { id } = await params
-  const supabase = await createAdminClient()
+  const supabase = createAdminDbClient()
 
   const { data, error } = await supabase
     .from('projects')
@@ -19,9 +19,9 @@ export async function GET(_request: Request, { params }: Params) {
 
 export async function PUT(request: Request, { params }: Params) {
   const { id } = await params
-  const supabase = await createAdminClient()
-
-  const { data: { user } } = await supabase.auth.getUser()
+  const supabaseAuth = await createClient()
+  const { data: { user } } = await supabaseAuth.auth.getUser()
+  const supabase = createAdminDbClient()
   if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 
   const body = await request.json()
@@ -38,9 +38,9 @@ export async function PUT(request: Request, { params }: Params) {
 
 export async function DELETE(_request: Request, { params }: Params) {
   const { id } = await params
-  const supabase = await createAdminClient()
-
-  const { data: { user } } = await supabase.auth.getUser()
+  const supabaseAuth = await createClient()
+  const { data: { user } } = await supabaseAuth.auth.getUser()
+  const supabase = createAdminDbClient()
   if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 
   const { error } = await supabase.from('projects').delete().eq('id', id)

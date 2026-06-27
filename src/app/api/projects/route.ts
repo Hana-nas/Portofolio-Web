@@ -1,4 +1,4 @@
-import { createClient, createAdminClient } from '@/lib/supabase/server'
+import { createClient, createAdminDbClient } from '@/lib/supabase/server'
 import { NextResponse } from 'next/server'
 
 export async function GET() {
@@ -13,7 +13,7 @@ export async function GET() {
 }
 
 export async function POST(request: Request) {
-  const supabase = await createAdminClient()
+  const supabase = createAdminDbClient()
 
   // Verify user is authenticated
   const { data: { user } } = await supabase.auth.getUser()
